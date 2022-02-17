@@ -1,0 +1,12 @@
+<h1>Movies 📽️</h1>
+
+<ul id='movie_list'>
+  <% @lists.each do |list|%>
+    <li>
+      <%= link_to list.name, list_path(list.id) %>
+      <%= link_to list_path(list.id), method: :delete, data: { confirm: "Delete #{list.name}?" } do %>
+        <i class="fa fa-trash-o" aria-hidden="true"></i>
+      <% end %>
+    </li>
+  <% end %>
+</ul>

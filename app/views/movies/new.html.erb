@@ -1,0 +1,6 @@
+<!-- ... -->
+<ul class="list-group">
+  <% @movie.bookmarks.each do |bookmark| %>
+    <li class="list-group-item"><%= bookmark.comment %></li>
+  <% end %>
+</ul>

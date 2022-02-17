@@ -37,6 +37,8 @@ end
 gem "autoprefixer-rails", "10.2.5"
 gem "font-awesome-sass", "~> 5.15"
 gem "simple_form"
+gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
+
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
